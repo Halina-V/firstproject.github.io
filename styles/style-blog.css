@@ -1,0 +1,225 @@
+/*header grid-элемент с фоновой картинкой*/
+header{
+	grid-column: 1/5;
+	grid-row:1/2;
+	width: 100%;
+	height: 30vh;
+	background: url('../images/header-bg2.jpg') no-repeat;
+	background-size:cover;
+	background-position: center bottom;
+	background-attachment: fixed;/*фиксированый фон*/
+	color: #fff;
+	position: relative;
+	top:0;
+}
+	/*заголовок header*/
+	.header-caption{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+		width:100%;
+		text-align: center;
+		font-family: 'Merriweather', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px silver,
+		-1px 1px 1px silver;
+		font-size: 16px;
+	}
+		.header-caption a{
+			text-decoration: none;
+			color:#fff;
+			display:inline-block;
+			border-radius: 5px 5px;
+			padding: 0 5px;
+		}
+		.header-caption a:hover{
+			text-shadow: 1px 1px 1px #fff,
+			-1px 1px 1px #fff;
+		}
+				.header-caption h2 {
+		display: block;
+	}
+		.header-caption h3 {
+		display: none;
+	}
+
+
+/*main грид-элемент*/
+main{
+	grid-column: 1/5;
+	grid-row:2/3;
+	width: 100%;/*растягивает все блоки по всей ширине*/
+	box-sizing: border-box;
+}
+
+	.news-list{
+		background-color: #fff;
+		color:#4e4854;
+		margin:30px auto;
+		padding: 10px;
+		justify-content: flex-start;
+	}
+		.news-item {
+			flex:1 ;
+			width:33.33%;
+			min-width: 300px;
+			padding: 20px;
+		}
+		.news-item:hover{
+			box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+		}
+
+	/*блок с каптинкой*/
+	.news-img {
+		margin: 0 0 10px;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 20vw;
+		min-height: 200px;
+		display: block;
+
+	}
+		.news-img img {
+			margin: 0 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px 5px;
+		}
+		.news-date {
+			font-size: 20px;
+			color: #697865;
+			font-weight: bold;
+			padding: 20px;
+			background-color: #fff;
+			position: absolute;
+			left: 50%;
+			top:90%;
+			border-radius: 5px 20px;
+	}
+		.news-date:before {
+			position: absolute;
+			content: "";
+			border: 1px solid #c5e3b1;
+			left: 6px;
+			top: 6px;
+			right: 6px;
+			bottom: 6px;
+			border-radius: 5px 20px;
+		}
+	/*блок с текстом*/
+	.news-desc {
+		width: 100%;
+		border-top: 1px solid #c5e3b1;
+		padding: 20px 20px;
+		text-align: center;
+		justify-content: space-between;
+		flex:1;
+	}
+		.news-desc a{
+			text-decoration: none;
+			color:#4e4854;
+		}
+		.news-desc h2{
+			font-style:oblique;
+			/*height: 70px;*/
+		}
+		.news-desc p {
+			width: 100%;
+			margin: 0;
+			color:#4e4854;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: justify;
+			height: 140px;
+			flex:1;
+		}
+		.news-desc .news-btn {
+			font-size: 14px;
+			color: #697865;
+			margin: 10px 0px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.news-desc .news-btn:hover{
+			color: #c5e3b1;
+		}
+/*стиль блока пагинации*/
+.pagination-pager {
+	margin: 20px 0;
+	text-align: center;
+	background-color:#697865;;
+	padding: 0 20px;
+	position: relative;
+	width: 100%;
+}
+	.pagination-pager ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		vertical-align: middle;
+	}
+		.pagination-pager ul li {
+			margin: 0;
+			display: inline-block;
+		}
+			.pagination-pager ul li a {
+				font-size: 14px;
+				line-height: 40px;
+				display: block;
+				color:#fff;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				text-decoration: none;
+			}
+			.pagination-pager ul li a:hover, .pagination-pager ul li a.active {
+				background: #fff;
+				box-shadow: 0 1px 6px rgb(0 0 0 / 30%);
+				color:#4e4854;
+			}
+
+.arrow-totop{
+	grid-column: 1/5;
+	grid-row: 2/3;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+	position: sticky;
+	top: 85vh;
+	left:95%;
+	z-index: 10;
+}
+
+@media(max-width: 920px){
+	.passive{
+		display: none;
+	}
+}
+
+
+@media (max-width: 600px){
+	/*уменьшение размера шрифта в заголовке*/
+	.header-caption h2 {
+		display: none;
+	}
+		.header-caption h3 {
+			display: block;
+		}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	.news-desc p{
+		max-width: 100%;
+	}
+.news-desc a{
+max-width:100%;
+}
+.news-item{
+	height:650px;
+}
+}

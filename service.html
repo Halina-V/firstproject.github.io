@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Наши услуги/ПРОЕКТИРОВАНИЕ ЛАНДШАФТНОГО ДИЗАЙНА</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style-service.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Merriweather+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon-v1.0/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+
+	<!-- Грид-контейенер общий -->
+	<div class="grid">
+
+		<!--Header-->
+		<header id="to-top">
+					<nav class="navigation minor-nav">
+			<!-- Кнопка раскрытия меню -->
+			<a href="javascript:void(0);" class="btn-menu" onclick="myFunction()">
+				<span class="icon icon-menu" ></span>
+			</a>
+
+			<!-- блок с логотипом -->
+			<div class="logo">
+				<img src="images/logo-png.png" alt="logo">
+			</div>
+
+			<!-- меню навигации -->
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">О нас</a></li>
+				<li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">Услуги</a>
+
+					<!-- выпадающий список услуг в меню навигации -->
+					<ul class="dropdown-menu" id="myDropdownMenu">
+						<li><a href="service.html">Ландшафтное проектирование</a></li>
+						<li><a href="service.html">Благоустройство территории</a></li>
+						<li><a href="service.html">Озеленение территории</a></li>
+						<li><a href="service.html">Устройство газона</a></li>
+						<li><a href="service.html">Монтаж систем автополива</a></li>
+						<li><a href="service.html">Укладка тротуарной плитки</a></li>
+						<li><a href="service.html">Монтаж уличного освещения</a></li>
+					</ul>
+					<!-- / выпадающий список услуг в меню навигации -->
+
+				</li>
+				<li><a href="service.html">Цены</a></li>
+				<li><a href="blog.html">Блог</a></li>
+				<li><a href="feedback.html">Отзывы</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+
+				<!-- кнопка поиска в меню навигации -->
+				<li class="openBtn" onclick="openSearch()"><a class="icon icon-search" href="#"></a></li>
+			</ul>
+			<div id="myOverlay" class="overlay">
+				<div class="closebtn" onclick="closeSearch()" title="Close Overlay"><span class="icon icon-keyboard_arrow_right"></span></div>
+				<div class="overlay-content">
+					<form>
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit" class="search-btn"><span class="icon icon-search"></span></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--/ блок навгации-->
+
+			<!-- текст-заголовок header -->
+			<div class="header-caption">
+				<h2>ПРОЕКТИРОВАНИЕ ЛАНДШАФТНОГО ДИЗАЙНА</h2>
+				<h3>ПРОЕКТИРОВАНИЕ ЛАНДШАФТНОГО ДИЗАЙНА</h3>
+				<p><a href="index.html">ГЛАВНАЯ </a> / <a href="service.html"> УСЛУГИ </a> / <a href="service.html"> ПРОЕКТИРОВАНИЕ ЛАНДШАФТНОГО ДИЗАЙНА</a></p>
+			</div>
+		</header>
+		<!--/Header-->
+
+		<!--блок навгации-->
+
+
+
+		<!--main-->
+		<main>
+			<div class="flex-row">
+				<!-- блок с ценами -->
+				<div class="service-block">
+					<div class="flex-column">
+						<div class="service-block-img">
+							<img src="images/content/cat_landshaftnoe-proektirovanie.jpg" alt="landshaftnoe-proektirovanie">
+						</div>
+
+						<div class="how-work-block">
+							<div class="how-work-items how-work-three-items">
+								<div class="how-work-item">
+									<img class="how-work-item_image" src="images/how_page.png" alt="page" />
+									<p class="how-work-item_text">Подготовка проекта</p>
+								</div>
+								<div class="how-work-item">
+									<img class="how-work-item_image" src="images/how_Plants.png" alt="plants" />
+									<p class="how-work-item_text">Cогласование и правка проекта </p>
+								</div>
+								<div class="how-work-item">
+									<img class="how-work-item_image" src="images/how_hand.png" alt="hand" />
+									<p class="how-work-item_text">Cдача проекта<br> заказчику</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="block_price">
+							<div class="price-elem">
+								<div class="price">
+									<div class="price_text">от 50 руб.</div>
+									<div class="footnote">*Итоговую стоимость узнавайте у менеджеров нашей компании.</div>
+								</div>
+							</div>
+						</div>
+						<!-- таблица с ценами -->
+						<div class="service-desc">
+							<div class="price-table">
+								<table>
+									<thead>
+										<tr class="showtr">
+											<th colspan="2">
+												<p>
+													<strong>Вид работ</strong>
+												</p>
+											</th>
+											<th>
+												<p>
+													<strong>Единица измерения</strong>
+												</p>
+											</th>
+											<th>
+												<p>
+													<strong>Стоимость, Бел. Руб.</strong>
+												</p>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="showtr">
+											<td colspan="4">
+												<p>
+													<strong>Предварительные работы</strong>
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													1
+												</p>
+											</td>
+											<td>
+												<p>
+													Консультация по вопросам дизайна, ухода за растениями и пр. (до 5 км от МКАД в пределах 2 часа)
+												</p>
+											</td>
+											<td>
+												<p>
+													консультация
+												</p>
+											</td>
+											<td>
+												<p>
+													38
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													2
+												</p>
+											</td>
+											<td>
+												<p>
+													Съемка высот местности (на схеме указываются существующие высотные отметки и горизонтали, М
+												</p>
+
+												<p>
+													1:100)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													20 (min. 150)
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													3
+												</p>
+											</td>
+											<td>
+												<p>
+													Схема организации рельефа (на схеме указываются существующие и проектные высотные отметки и
+												</p>
+
+												<p>
+													горизонтали, проектные уклоны, М 1:100)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													30 (min. 150)
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													4
+												</p>
+											</td>
+											<td>
+												<p>
+													Картограмма земляных работ (на схеме с сеткой квадратов приводятся объемы насыпи и выемки с суммарными данными; при необходимости отдельно указываются объемы по плодородному грунту)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													20 (min. 150)
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													5
+												</p>
+											</td>
+											<td>
+												<p>
+													Обмерные работы
+												</p>
+											</td>
+											<td>
+												<p>
+													выезд
+												</p>
+											</td>
+											<td>
+												<p>
+													от 30
+												</p>
+											</td>
+										</tr>
+										<tr class="showtr">
+											<td>
+												<p>
+													6
+												</p>
+											</td>
+											<td>
+												<p>
+													Инвентаризация зеленых насаждений (схема или план расположения зеленых насаждений, ведомость
+												</p>
+
+												<p>
+													инвентаризации)
+												</p>
+											</td>
+											<td>
+												<p>
+													чел./час.
+												</p>
+											</td>
+											<td>
+												<p>
+													18
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="4">
+												<p>
+													<strong><em>Проектирование</em></strong>
+												</p>
+											</td>
+										</tr>
+										<tr id="hide">
+											<td>
+												<p>
+													1
+												</p>
+											</td>
+											<td>
+												<p>
+													Эскиз и дизайн-проект благоустройства и озеленения территории (объемно-пространственная структура малого сада; компьютерное исполнение и/или ручная
+												</p>
+
+												<p>
+													графика).
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													30 (min 75)
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													2
+												</p>
+											</td>
+											<td>
+												<p>
+													План посадок древесно-кустарниковых и цветочных
+													растений с ассортиментной ведомостью посадочного материала (компьютерное исполнение)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													30
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													3
+												</p>
+											</td>
+											<td>
+												<p>
+													Разбивочная схема (привязка и размеры зданий, сооружений, дорожек, архитектурных форм; компьютерное исполнение)
+												</p>
+											</td>
+											<td>
+												<p>
+													1 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													1
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													4
+												</p>
+											</td>
+											<td>
+												<p>
+													Схема расположения осветительных элементов с подбором дизайна светильников (компьютерное исполнение)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													10
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													5
+												</p>
+											</td>
+											<td>
+												<p>
+													Схема раскладки мощения с подбором материалов (включая объемы материалов и разбивочную схему; компьютерное исполнение)
+												</p>
+											</td>
+											<td>
+												<p>
+													100 м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													18
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													6
+												</p>
+											</td>
+											<td>
+												<p>
+													Разработка архитектурного элемента (пергола, беседка и т.д.)
+												</p>
+											</td>
+											<td>
+												<p>
+													1 эл-т
+												</p>
+											</td>
+											<td>
+												<p>
+													договорная (от 50)
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													7
+												</p>
+											</td>
+											<td>
+												<p>
+													Эскиз водоема, каскада и т.п.(компьютерное исполнение и/или ручная графика)
+												</p>
+											</td>
+											<td>
+												<p>
+													1 эл-т
+												</p>
+											</td>
+											<td>
+												<p>
+													договорная (от 50)
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													8
+												</p>
+											</td>
+											<td>
+												<p>
+													Разработка цветочно-декоративной
+												</p>
+
+												<p>
+													композиции (подробный план посадок с учетом размеров растений, выполняемой функции, сезонности и пр.; компьютерное исполнение и/или ручная графика)
+												</p>
+											</td>
+											<td>
+												<p>
+													м.кв.
+												</p>
+											</td>
+											<td>
+												<p>
+													50
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													9
+												</p>
+											</td>
+											<td>
+												<p>
+													Письменные рекомендации по уходу за зелеными насаждениями
+												</p>
+											</td>
+											<td>
+												<p>
+													1 комплект
+												</p>
+											</td>
+											<td>
+												<p>
+													75
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="4">
+												<p>
+													<strong><em>3</em></strong><strong><em>D-визуализация</em></strong>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													1
+												</p>
+											</td>
+											<td>
+												<p>
+													SketchUp
+												</p>
+											</td>
+											<td>
+												<p>
+													<a href="https://3dwarehouse.sketchup.com/search/?q=landscape&searchTab=model">Ссылка на файл</a>
+												</p>
+											</td>
+											<td>
+												<p>
+													75
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													2
+												</p>
+											</td>
+											<td>
+												<p>
+													3DsMax
+												</p>
+											</td>
+											<td>
+												<p>
+													сцена (2-3 вида)
+												</p>
+											</td>
+											<td>
+												<p>
+													225
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>
+													3
+												</p>
+											</td>
+											<td>
+												<p>
+													Ручная
+												</p>
+											</td>
+											<td>
+												<p>
+													перспектива
+												</p>
+											</td>
+											<td>
+												<p>
+													45
+												</p>
+											</td>
+										</tr>
+										<tr class="last-row">
+											<td colspan="4">
+												<p>
+													<strong>*&nbsp;Примечание:</strong>
+												</p>
+
+												<p>
+													<strong>1.&nbsp;Стоимость указана без учета растений и материалов.</strong>
+												</p>
+
+												<p>
+													<strong>2.&nbsp;При выполнении работ на откосах, а также на особо уплотненных грунтах применяется коэффициент 1,25.</strong>
+												</p>
+
+												<p>
+													<strong>3.&nbsp;Выемка грунта на больших площадях производится техникой на договорной основе.</strong>
+												</p>
+
+												<p>
+													<strong>4.&nbsp;Данный прайс-лист предназначен для определения договорной стоимости выполнения работ на территории Беларуси.</strong>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="service-desc-text">
+								<p>
+									При проведении благоустройства и озеленения ландшафтное проектирование – один из видов работ, которые проводятся дизайнерами. Проектировать ландшафт проект на бумаге не менее важно, чем составлять план дома при строительстве. С ним расчеты будут точнее, а значит можно сократить лишние траты, воплощая любое решение по оформлению.
+								</p>
+
+								<p>
+									Ландшафтный дизайн создается, чтобы продумать все детали заранее и получить привлекательную, комфортную зеленую зону у строения. План включает подробное отражение всех природных характеристик территории, изложение желаний владельца дома, которые должны основываться на стилевых параметрах, основных тенденциях в оформлении.
+								</p>
+
+								<p class="img">
+									<img alt="Ландшафтное проектирование" src="images/content/proekt-landshaftnogo-dizajna-doma.jpg" />
+								</p>
+								&nbsp;
+
+								<h2>
+									Ландшафтное проектирование участка: процесс проведения
+								</h2>
+
+								<p>
+									Первый этап включает заключение договора, выезд для осмотра местности, съёмки находящихся на ней объектов. Специалист исследует климат, рельеф территории, анализирует строение почвы, стилистику сооружения. После этого разрабатывается техническая документация по проектированию, в соответствии с которой проводятся работы на участке.
+								</p>
+
+								<p>
+									Дизайнер определяет стиль территории, занимается разбивкой пространства на зоны, размещает древесно-кустарниковую растительность, цветники, водоемы, газоны, решает вопрос о корректировке рельефа. Подготавливает примерный план и фото, каким в будущем планируется внешний вид участка.
+								</p>
+
+								<h3>
+									Все ландшафтные дизайн-проекты должны подчиняться основным показателям:
+								</h3>
+
+								<ul>
+									<li>
+										функциональность – предметы ландшафтного проектирования предназначены как для практических, так и для функций по оформлению местности. Они должны взаимодействовать друг с другом, ведь несоответствие стандартов одного элемента ведет к быстрому износу, разрушению другого;
+									</li>
+									<li>
+										продуманность – соответствие всех дизайнерских воплощений требованиям безопасности, которые помогают людям комфортно сосуществовать с окружающей природой. Дорожки, мостики, декоративные предметы не должны мешать свободному перемещению и быть удобными;
+									</li>
+									<li>
+										эстетичность – каждый элемент обязан дополнять другой, быть привлекательным внешне, соответствовать существующей среде. Не стоит воссоздавать общественные парки на своём заднем дворе  навряд ли это впишется в общий антураж.
+									</li>
+								</ul>
+
+								<p>
+									Большинство клиентов заранее представляют, какой должна быть их дачная территория и какие процедуры по обустройству они хотели бы заказать. Некоторые мечтают сделать не только красивый уголок рядом со зданием, но и создать зону для отдыха. В ней можно сесть с друзьями, родственниками, лечь в шезлонг с книгой, спокойно принимать солнечные ванны. Другие же представляют, как их частное владение окружает оригинальный сад с редкими представителями флоры.
+								</p>
+
+								<p>
+									Планируя заказать проект дизайна частного участка, стоит учитывать, что каждое решение подбирают под конкретный участок, его строение, размеры, форму. При этом важно уделять внимание вкусам владельцев, соотносить их с существующими архитектурными стандартами. Поэтому перед подготовкой территории специалист выясняет запросы заказчика, обсуждает с ним возможные способы реализации этих идей. Наше преимущество в том, что менеджеры находятся онлайн в рабочее время и всегда с радостью ответят на все вопросы.
+								</p>
+
+								<p class="img"><img alt="Проектирование дизайна участка дома" src="images/content/landshaftnyj-dizajn-pod-klyuch.jpg" /></p>
+								&nbsp;
+								<h3>Достоинства заказа ландшафтных работ у нас</h3>
+
+								<p >
+									Наша компания гарантирует качественный проект, а также индивидуальный подход ко всем клиентам при его составлении. Вы заранее знаете, в какую цену Вам обойдутся наши услуги. А в случае несоответствия наших идей вашим запросам мы готовы вернуть предоплату.
+								</p>
+
+								<p>
+									На каждом этапе работы после того, как спроектирована очередная схема, мы обсуждаем с владельцем внесенные дополнения и только после этого приступаем к их воплощению. Проектная документация, которую должен утвердить владелец, подтверждает программу по <a href="#">озеленению территории</a>,монтажу садовых дорожек,<a href="#">систем полива</a>, газонов, клумб и других декоративных элементов. Мы готовы воплотить любую идею наших заказчиков!
+								</p>
+
+								<p>
+									Кроме мастерства сотрудников, внимательности к клиентам, мы даем гарантии на все проведенные процедуры по благоустройству. Мы всегда заключаем договор, который официально закрепляет права и обязанности компании и владельца. В нем прописываются заказываемые услуги, их стоимость, сроки выполнения, условия расчета. Такая система дает максимальную прозрачность выполнения работ и позволяет следить за перемещением денег, проведенными работами.
+								</p>
+
+								<p>
+									Проектирование должно руководствоваться желаниями владельца, так как дачный уголок должен ежедневно приносить положительные эмоции. Однако наши услуги популярны не только у дачников. Многим изначально кажется, что в деревне дизайну не место, однако это не так и он отлично туда вписывается. Наша задача заключается в реализации ваших планов, не выходя при этом за рамки бюджета. Наше тесное сотрудничество с обсуждением времени сдачи и плодотворной работой специалистов под ключ создает для клиентов место, в которое хочется возвращаться.
+								</p>
+
+								<p>
+									<strong>ВОЗМОЖНО, ВАМ БУДУТ ИНТЕРЕСНЫ ДРУГИЕ НАШИ УСЛУГИ:</strong>
+								</p>
+
+								<ul>
+									<li>
+										<p>
+											<a href="service.html">Благоустройство участка и территории</a>
+										</p>
+									</li>
+									<li>
+										<p>
+											<a href="service.html">Монтаж уличного освещения</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar">
+					<div class="sidebar-search">
+						<form >
+							<input type="search" placeholder="Искать здесь...">
+							<button class="search-btn"><span class="icon icon-search"></span></button>
+						</form>
+					</div>
+
+					<div class="sidebar-menu">
+						<a href="#" class="service-link">
+							<span class="service-title">Наши услуги</span>
+						</a>
+						<!-- Вывод левого меню-->
+						<ul class="sidebar-menu-list">
+							<li class="active">
+								<a href="#">
+									<span>Проектирование ландшафтного дизайна</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Благоустройство территории земельного участка</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Дизайн ландшафтного озеленения</span>
+								</a>
+							</li>
+							<li class="sidebar-submenu ">
+								<a href="javascript:void(0);" onclick="serviceDropdownMenu()">
+									<span>Обустройство газона под ключ</span>
+								</a>
+
+								<!-- дополнительный список по газону -->
+								<ul class="sidebar-submenu-list" id="myServiceDropdownMenu">
+									<li >
+										<a class="showdown" href="#">
+											<span>Укладка рулонных газонов в Минске</span>
+										</a>
+									</li>
+									<li >
+										<a class="showdown" href="#">
+											<span>Устройство посевного газона в Минске</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<span>Посадка декоративных растений</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Система автополива газона под ключ</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Укладка тротуарной плитки в Минске и Минской области</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Монтаж уличного освещения</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Дезинсекция от клещей</span>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<span>Уход за газоном</span>
+								</a>
+							</li>
+						</ul>
+						<!--/Вывод левого меню-->
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- /main -->
+
+			<!-- стрелка прокрутки -->
+			<div class="arrow-totop">
+				<a href="#to-top" class="flex">
+					<span class="icon icon-keyboard_arrow_up"></span>
+				</a>
+			</div>
+
+
+			<!-- footer -->
+			<footer>
+				<div class="flex-column footer">
+
+					<!-- footer-top -->
+					<div class="footer-top">
+						<div class="flex">
+
+							<div class="footer-top-item social">
+								<h4>Подписывайтесь</h4>
+								<a href="contact.html" target="blank">
+									<span class="icon icon-facebook"></span>
+								</a>
+								<a href="contact.html" target="blank">
+									<span class="icon icon-instagram"></span>
+								</a>
+								<a href="contact.html" target="blank">
+									<span class="icon icon-c"></span>
+								</a>
+							</div>
+
+							<div class="footer-top-item flex-item">
+								<span class="icon icon-clock"></span>
+								<p>Пн-Пт: 8:30-20:00<br>Сб-Вс: 10:00-17:00</p>
+							</div>
+
+							<div class="footer-top-item flex-item">
+								<a href="tel:+37529xxxxxxx">
+									<span class="icon icon-phone"></span>
+								</a>
+								<p>+375 (29) xx xx xxx<br>xxx@mail.ru</p>
+							</div>
+
+							<div class="footer-top-item flex-item">
+								<div class="border">
+									<a class="footer-btn" href="contact.html">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /footer-top -->
+
+					<!-- footer-bottom -->
+					<div class="footer-bottom">
+						<div class="flex">
+
+							<div class="footer-bottom-item">
+								<h4>О нас</h4>
+								<p>Мы профессионалы своего дела и ценим свою репутацию. Именно поэтому качество наших услуг всегда остается на высоком уровне.
+								Мы предоставляем все виды услуг по ландшафтному дизайну на всей территории Республики Беларусь</p>
+							</div>
+
+							<div class="footer-bottom-item">
+								<h4>Наши услуги</h4>
+								<ul>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Проектирование ландшафтного дизайна</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Благоустройство земельных территорий</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Озеленение участка дома под ключ</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Обустройство газона</a></li>
+									<li><a href="#"><span class="icon icon-keyboard_arrow_right"></span>Посадка декоративных растений</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Монтаж и установка систем автоматического полива</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Укладка тротуарной плитки под ключ</a></li>
+									<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Установка заборовМонтаж уличного освещения</a></li>
+								</ul>
+							</div>
+
+							<div class="footer-bottom-item">
+								<h4>Контакты</h4>
+								<ul class="contact">
+									<li><span class="icon icon-location"></span> УНП XXXXXXXXX<br>
+									г. Минск, уд.Семеняко 6</li>
+									<li><span class="icon icon-phone"></span> +375 (29) xx xx xxx</li>
+									<li><span class="icon icon-mail"></span> xxx@gmail.com</li>
+								</ul>
+							</div>
+
+							<div class="footer-bottom-item">
+								<h4>Где мы находимся</h4>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.136440379468!2d27.4473220157515!3d53.87600228009349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbda92c3136635%3A0xf54e6bbae216aaaa!2z0YPQuy4g0K7RgNC40Y8g0KHQtdC80LXQvdGP0LrQviA2LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1617837130729!5m2!1sru!2sby" width="270" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/ footer-bottom -->
+			</footer>
+			<!-- /footer -->
+		</div>
+
+		<!-- scripts -->
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<!-- скрипт для вызова меню -->
+		<script src="scripts/index.js">
+		</script>
+	</body>
+	</html>

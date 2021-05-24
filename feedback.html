@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Отзывы наших клиентов</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style-feedback.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Merriweather+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon-v1.0/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+	<!-- Грид-контейенер общий -->
+	<div class="grid">
+
+		<!--Header-->
+		<header id="to-top">
+					<!--блок навгации-->
+		<nav class="navigation minor-nav">
+			<!-- Кнопка раскрытия меню -->
+			<a href="javascript:void(0);" class="btn-menu" onclick="myFunction()">
+				<span class="icon icon-menu" ></span>
+			</a>
+
+			<!-- блок с логотипом -->
+			<div class="logo">
+				<img src="images/logo-png.png" alt="logo">
+			</div>
+
+			<!-- меню навигации -->
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">О нас</a></li>
+				<li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">Услуги</a>
+
+					<!-- выпадающий список услуг в меню навигации -->
+					<ul class="dropdown-menu" id="myDropdownMenu">
+						<li><a href="service.html">Ландшафтное проектирование</a></li>
+						<li><a href="service.html">Благоустройство территории</a></li>
+						<li><a href="service.html">Озеленение территории</a></li>
+						<li><a href="service.html">Устройство газона</a></li>
+						<li><a href="service.html">Монтаж систем автополива</a></li>
+						<li><a href="service.html">Укладка тротуарной плитки</a></li>
+						<li><a href="service.html">Монтаж уличного освещения</a></li>
+					</ul>
+					<!-- / выпадающий список услуг в меню навигации -->
+
+				</li>
+				<li><a href="service.html">Цены</a></li>
+				<li><a href="blog.html">Блог</a></li>
+				<li><a href="feedback.html">Отзывы</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+
+				<!-- кнопка поиска в меню навигации -->
+				<li class="openBtn" onclick="openSearch()"><a class="icon icon-search" href="#"></a></li>
+			</ul>
+			<div id="myOverlay" class="overlay">
+				<div class="closebtn" onclick="closeSearch()" title="Close Overlay"><span class="icon icon-keyboard_arrow_right"></span></div>
+				<div class="overlay-content">
+					<form>
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit" class="search-btn"><span class="icon icon-search"></span></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--/ блок навгации-->
+
+			<!-- текст-заголовок header -->
+			<div class="header-caption">
+				<h2>ОТЗЫВЫ</h2>
+				<h3>ОТЗЫВЫ</h3>
+				<p><a href="index.html">ГЛАВНАЯ </a> /<a href="contact.html"> ОТЗЫВЫ</a></p>
+			</div>
+		</header>
+		<!--/Header-->
+
+
+
+
+		<!--main-->
+		<main>
+			<div class="flex-column feedback">
+				<div class="block-title">
+					<p>Что о нас говорят</p>
+					<div class="block-subtitle">
+						Отзывы наших клиентов
+					</div>
+				</div>
+
+				<form class="flex-column">
+					<div>
+						<label>Введите имя:</label>
+						<div>
+							<input id="name" name="name" type="text" placeholder="Введите ваше имя:">
+						</div>
+					</div>
+					<div>
+						<label>Введите email:</label>
+						<div>
+							<input id="mail" name='mail' type='email' placeholder="Введите ваш email:">
+						</div>
+					</div>
+					<div>
+						<label>Ваш отзыв:</label>
+						<div>
+							<textarea name="message" id="message" placeholder="Введите ваш отзыв:"></textarea>
+						</div> 
+					</div>
+					<div>
+						<input id="submit" name="submit" type="submit" value="Отправить отзыв">
+					</div>
+				</form>
+
+				<!-- список с отзывами -->
+				<div class='feedback-list'>
+					<div class='feedback-post'>
+						<span class='post-author'>Валентина</span>
+						<span class='post-date'>01.03.2021 21:00</span>
+						<p>Заказывали установку светильников вдоль дорожек на коттеджном участке. Специалисты подобрали оригинальное по дизайну оборудование, которое гармонично вписалось в ландшафт. Мы остались очень довольны сервисом и качеством работы. Рекомендуем!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Маргарита</span>
+						<span class='post-date'>01.03.2021 21:00</span>
+						<p>Обращаемся в «Мир Ландшафта» не первый раз и всегда получаем только положительные эмоции. Не каждая компания способна предложить полный спектр услуг по ландшафтному дизайну и благоустройству по демократичным ценам. Хотим выразить благодарность каждому сотруднику компании.</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Михаил</span>
+						<span class='post-date'>01.03.2021 20:59</span>
+						<p>Долго искал надежного подрядчика. В итоге остановил выбор на «Мире Ландшафта». Дизайнеры с нуля разработали для меня проект освещения загородного участка, выбрали светильники, грамотно выполнили монтаж. Выражаю особую благодарность за профессионализм и внимание к пожеланиям клиента!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Владимир</span>
+						<span class='post-date'>01.03.2021 20:59</span>
+						<p>Обратились в компанию по рекомендации друзей, они также заказывали здесь забор. Мы выбрали классическое ограждение из металлопрофиля. Специалисты все сделали качественно, быстро и с гарантией. Будем обращаться еще!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Ирина</span>
+						<span class='post-date'>23.02.2021 03:52</span>
+						<p>Давно сотрудничаю с «Миром Ландшафта». Ценю эту студию ландшафтного дизайна за индивидуальный подход к клиентам, оперативность, оригинальность решений и высокий уровень профессионализма. Рекомендую тем, кто хочет создать на своем участке настоящую красоту!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Дмитрий</span>
+						<span class='post-date'>23.02.2021 03:52</span>
+						<p>Заказывали здесь укладку плитки для дорожек на детской площадке. Специалисты посоветовали выбрать прорезиненный материал, как самый безопасный для детей. Думали, будет дорого такое удовольствие, но цена оказалась очень приемлемой вместе с проектированием и монтажом. Спасибо за отличную работу и демократичные цены!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Алексей</span>
+						<span class='post-date'>23.02.2021 03:52</span>
+						<p>Заказываю автополив в этой компании не первый год. Первый раз — родителям на дачу. Сейчас сделал заказ для себя. Очень доволен работой компании. Мне быстро подобрали подходящую систему и качественно выполнили монтаж, дали рекомендации. Спасибо профессионалам!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Карина</span>
+						<span class='post-date'>23.02.2021 03:51</span>
+						<p>Заказывали здесь посевной газон с разными видами трав. Этот вариант идеально подходил для нашего сада в английском стиле. Ландшафтные дизайнеры предоставили нам консультацию, создали проект, выбрали травы, подготовили территорию и произвели посадку. Все работы «под ключ» и качественно. Очень довольны!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Андрей</span>
+						<span class='post-date'>15.02.2021 19:43</span>
+						<p>Если вы хотите получить надежную и красивую ограду для своего участка, обращайтесь сюда. Заказывали в «Мире Ландшафта» ограждение для дачи. Площадь нашего участка 10 соток, конфигурация сложная, есть перепады высот. Но специалисты справились с задачей. Рекомендуем эту компанию!</p>
+					</div>
+
+					<div class='feedback-post'>
+						<span class='post-author'>Денис</span>
+						<span class='post-date'>15.02.2021 19:43</span>
+						<p>Благоустройство дорожек возле коттеджа решили доверить мастерам «Мира Ландшафта». Выбрали натуральный камень разных цветов. Результат работы очень порадовал всю семью. Дорожки получились элегантными и отлично вписались в наш ландшафтный дизайн. Спасибо опытным мастерам за качество и надежность!</p>
+					</div>
+				</div>
+				<!-- строка пагинации -->
+				<div class="pagination-pager">
+					<ul>
+						<li><a href="#" >&lt;</a></li>
+						<li><a class='active ' href='#' >1</a></li>
+						<li><a  href='#' >2</a></li>
+						<li><a  href='#' >3</a></li>
+						<li><a  href='#' >&gt;</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- /main -->
+
+
+				<!-- стрелка прокрутки -->
+				<div class="arrow-totop">
+					<a href="#to-top" class="flex">
+						<span class="icon icon-keyboard_arrow_up"></span>
+					</a>
+				</div>
+
+
+				<!-- footer -->
+				<footer>
+					<div class="flex-column footer">
+
+						<!-- footer-top -->
+						<div class="footer-top">
+							<div class="flex">
+
+								<div class="footer-top-item social">
+									<h4>Подписывайтесь</h4>
+									<a href="contact.html" target="blank">
+										<span class="icon icon-facebook"></span>
+									</a>
+									<a href="contact.html" target="blank">
+										<span class="icon icon-instagram"></span>
+									</a>
+									<a href="contact.html" target="blank">
+										<span class="icon icon-c"></span>
+									</a>
+								</div>
+
+								<div class="footer-top-item flex-item">
+									<span class="icon icon-clock"></span>
+									<p>Пн-Пт: 8:30-20:00<br>Сб-Вс: 10:00-17:00</p>
+								</div>
+
+								<div class="footer-top-item flex-item">
+									<a href="tel:+37529xxxxxxx">
+										<span class="icon icon-phone"></span>
+									</a>
+									<p>+375 (29) xx xx xxx<br>xxx@mail.ru</p>
+								</div>
+
+								<div class="footer-top-item flex-item">
+									<div class="border">
+										<a class="footer-btn" href="contact.html">Заказать звонок</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /footer-top -->
+
+						<!-- footer-bottom -->
+						<div class="footer-bottom">
+							<div class="flex">
+
+								<div class="footer-bottom-item">
+									<h4>О нас</h4>
+									<p>Мы профессионалы своего дела и ценим свою репутацию. Именно поэтому качество наших услуг всегда остается на высоком уровне.
+									Мы предоставляем все виды услуг по ландшафтному дизайну на всей территории Республики Беларусь</p>
+								</div>
+
+								<div class="footer-bottom-item">
+									<h4>Наши услуги</h4>
+									<ul>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Проектирование ландшафтного дизайна</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Благоустройство земельных территорий</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Озеленение участка дома под ключ</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Обустройство газона</a></li>
+										<li><a href="#"><span class="icon icon-keyboard_arrow_right"></span>Посадка декоративных растений</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Монтаж и установка систем автоматического полива</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Укладка тротуарной плитки под ключ</a></li>
+										<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Установка заборовМонтаж уличного освещения</a></li>
+									</ul>
+								</div>
+
+								<div class="footer-bottom-item">
+									<h4>Контакты</h4>
+									<ul class="contact">
+										<li><span class="icon icon-location"></span> УНП XXXXXXXXX<br>
+										г. Минск, уд.Семеняко 6</li>
+										<li><span class="icon icon-phone"></span> +375 (29) xx xx xxx</li>
+										<li><span class="icon icon-mail"></span> xxx@gmail.com</li>
+									</ul>
+								</div>
+
+								<div class="footer-bottom-item">
+									<h4>Где мы находимся</h4>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.136440379468!2d27.4473220157515!3d53.87600228009349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbda92c3136635%3A0xf54e6bbae216aaaa!2z0YPQuy4g0K7RgNC40Y8g0KHQtdC80LXQvdGP0LrQviA2LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1617837130729!5m2!1sru!2sby" width="270" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ footer-bottom -->
+				</footer>
+				<!-- /footer -->
+			</div>
+
+			<!-- scripts -->
+			<script src="scripts/jquery-3.6.0.min.js"></script>
+
+			<!-- скрипт для вызова меню -->
+			<script src="scripts/index.js">
+			</script>
+		</body>
+		</html>

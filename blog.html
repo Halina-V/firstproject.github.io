@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Garden-baske/Блог</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style-blog.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Merriweather+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/icomoon-v1.0/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+	<!-- Грид-контейенер общий -->
+	<div class="grid">
+
+		<!--Header-->
+		<header id="to-top">
+					<!--блок навгации-->
+		<nav class="navigation minor-nav">
+			<!-- Кнопка раскрытия меню -->
+			<a href="javascript:void(0);" class="btn-menu" onclick="myFunction()">
+				<span class="icon icon-menu" ></span>
+			</a>
+
+			<!-- блок с логотипом -->
+			<div class="logo">
+				<img src="images/logo-png.png" alt="logo">
+			</div>
+
+			<!-- меню навигации -->
+			<ul class="topnav" id="myTopnav">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="gallery.html">О нас</a></li>
+				<li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">Услуги</a>
+
+					<!-- выпадающий список услуг в меню навигации -->
+					<ul class="dropdown-menu" id="myDropdownMenu">
+						<li><a href="service.html">Ландшафтное проектирование</a></li>
+						<li><a href="service.html">Благоустройство территории</a></li>
+						<li><a href="service.html">Озеленение территории</a></li>
+						<li><a href="service.html">Устройство газона</a></li>
+						<li><a href="service.html">Монтаж систем автополива</a></li>
+						<li><a href="service.html">Укладка тротуарной плитки</a></li>
+						<li><a href="service.html">Монтаж уличного освещения</a></li>
+					</ul>
+					<!-- / выпадающий список услуг в меню навигации -->
+
+				</li>
+				<li><a href="service.html">Цены</a></li>
+				<li><a href="blog.html">Блог</a></li>
+				<li><a href="feedback.html">Отзывы</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+
+				<!-- кнопка поиска в меню навигации -->
+				<li class="openBtn" onclick="openSearch()"><a class="icon icon-search" href="#"></a></li>
+			</ul>
+			<div id="myOverlay" class="overlay">
+				<div class="closebtn" onclick="closeSearch()" title="Close Overlay"><span class="icon icon-keyboard_arrow_right"></span></div>
+				<div class="overlay-content">
+					<form>
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit" class="search-btn"><span class="icon icon-search"></span></button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--/ блок навгации-->
+
+			<!-- текст-заголовок header -->
+			<div class="header-caption">
+				<h2>БЛОГ</h2>
+				<h3>БЛОГ</h3>
+				<p><a href="index.html">ГЛАВНАЯ </a> / <a href="#"> БЛОГ</a></p>
+			</div>
+		</header>
+		<!--/Header-->
+
+
+
+		<!--main-->
+		<main>
+			<div class="news-list flex-row">
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1606291792.jpg" alt="Вертикальное озеленение" title="Вертикальное озеленение">
+						<div class="news-date">23.03.2021</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Вертикальное озеленение</h2>
+						</a>
+						<p>Вертикальное озеленение — популярное направление в современном ландшафтном дизайне. Его можно создать при помощи различных лазающих, ампельных и плетущихся ...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1606292669.jpg" alt="Как отгородиться от соседей по даче?" title="Как отгородиться от соседей по даче?">
+						<div class="news-date">18.03.2021</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Как отгородиться от соседей по даче?</h2>
+						</a>
+						<p>Обычно соседи по даче знают друг о друге все. Это не только из-за тесного общения или любопытства, но и благодаря особенностям расположения дачных участков ...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1606293789.jpg" alt="Использование роз в дизайне садового участка" title="Использование роз в дизайне садового участка">
+						<div class="news-date">13.03.2021</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Использование роз в дизайне садового участка</h2>
+						</a>
+						<p>Розы пользуются популярностью у садоводов по всему миру, так как они элегантны и красивы. Чаще всего розовый куст размещают на самом видном месте, считая его ...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1598860278.jpg" alt="Мал да удал: 10 идей для небольшого сада" title="Мал да удал: 10 идей для небольшого сада">
+						<div class="news-date">31.01.2021</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Мал да удал: 10 идей для небольшого сада</h2>
+						</a>
+						<p>К сожалению, не все владельцы загородных домов могут похвастать просторными приусадебными территориями. В таком случае нужно рационально и грамотно использова...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1598611270.jpg" alt="Основные стили ландшафтного дизайна" title="Основные стили ландшафтного дизайна">
+						<div class="news-date">24.01.2021</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Основные стили ландшафтного дизайна</h2>
+						</a>
+						<p>Обычно владельцы загородных домов стараются сделать уютным, комфортным не только коттедж, но и приусадебный участок. Они покупают для сада и клумб красивые цв...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1598612030.jpg" alt="Типы и особенности газонов" title="Типы и особенности газонов">
+						<div class="news-date">24.12.2020</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">Типы и особенности газонов</h2>
+						</a>
+						<p>Стильный, эффектный ландшафтный дизайн невозможен без аккуратного, ухоженного газона. Сегодня доступны разные варианты, которые находят место как рядом с част...</p>
+						<a href="#" class="news-btn">Читать далее</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1598609776.jpg" alt="Растения для террасы: 5 вариантов посадки" title="Растения для террасы: 5 вариантов посадки">
+						<div class="news-date">18.12.2020</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">
+								Растения для террасы: 5 вариантов посадки
+							</h2>
+						</a>
+						<p>С наступлением теплой погоды проводить время на улице становится все приятнее. В окружении зелени, ароматных цветов, раскидистых деревьев всегда уютно и споко...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1598610742.jpg" alt="Эксклюзивный сад бонсай" title="Эксклюзивный сад бонсай">
+						<div class="news-date">
+							18.11.2020
+						</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">
+								Эксклюзивный сад бонсай
+							</h2>
+						</a>
+
+						<p>Бонсай – это японское искусство выращивания древовидного растения в миниатюре, поэтому его естественной средой является улица. Большинство любителей комнатных...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1592475567.jpg" alt="Резиновая плитка на участке: особенности выбора и укладки" title="Резиновая плитка на участке: особенности выбора и укладки">
+						<div class="news-date">
+							18.10.2020
+						</div>
+					</a>
+
+					<div class="news-desc flex-column">
+						<a href="#">
+							<h2 class="news-title">
+								Резиновая плитка на участке: особенности выбора и укладки
+							</h2>
+						</a>
+						<p>Плитка из резиновой крошки – покрытие, которое многие владельцы выбирают для обустройства участка частного дома. Благодаря большому количеству достоинств, укл...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1592477463.jpg" alt="10 причин нанять ландшафтного дизайнера" title="10 причин нанять ландшафтного дизайнера">
+						<div class="news-date">
+							18.06.2020
+						</div>
+					</a>
+
+					<div class="news-desc">
+						<a href="#">
+							<h2 class="news-title">
+								10 причин нанять ландшафтного дизайнера
+							</h2>
+						</a>
+						<p>Многие владельцы частных домов обустраивают свои участки самостоятельно и считают сотрудничество с ландшафтным дизайнером лишним. В некоторых случаях действит...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column passive">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1592477463.jpg" alt="10 причин нанять ландшафтного дизайнера" title="10 причин нанять ландшафтного дизайнера">
+						<div class="news-date">
+							18.06.2020
+						</div>
+					</a>
+
+					<div class="news-desc">
+						<a href="#">
+							<h2 class="news-title">
+								10 причин нанять ландшафтного дизайнера
+							</h2>
+						</a>
+						<p>Многие владельцы частных домов обустраивают свои участки самостоятельно и считают сотрудничество с ландшафтным дизайнером лишним. В некоторых случаях действит...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div>
+				</div>
+
+				<div class="news-item flex-column passive">
+					<a href="#" class="news-img">
+						<img src="images/content/blog/1592477463.jpg" alt="10 причин нанять ландшафтного дизайнера" title="10 причин нанять ландшафтного дизайнера">
+						<div class="news-date">
+							18.06.2020
+						</div>
+					</a>
+
+					<div class="news-desc">
+						<a href="#">
+							<h2 class="news-title">
+								10 причин нанять ландшафтного дизайнера
+							</h2>
+						</a>
+						<p>Многие владельцы частных домов обустраивают свои участки самостоятельно и считают сотрудничество с ландшафтным дизайнером лишним. В некоторых случаях действит...</p>
+						<a href="#" class="news-btn">
+							Читать далее
+						</a>
+					</div> 
+				</div>
+			</div>
+			<!-- строка пагинации -->
+			<div class="pagination-pager">
+				<ul>
+					<li><a href="#">&lt;</a></li>
+					<li><a class='active ' href='#' >1</a></li>
+					<li><a class=' ' href='#' >2</a></li>
+					<li><a class=' ' href='#' >&gt;</a></li>
+				</ul>
+			</div>
+		</main>
+		<!-- /main -->
+
+
+		<!-- стрелка прокрутки -->
+		<div class="arrow-totop">
+			<a href="#to-top" class="flex">
+				<span class="icon icon-keyboard_arrow_up"></span>
+			</a>
+		</div>
+
+
+		<!-- footer -->
+		<footer>
+			<div class="flex-column footer">
+
+				<!-- footer-top -->
+				<div class="footer-top">
+					<div class="flex">
+
+						<div class="footer-top-item social">
+							<h4>Подписывайтесь</h4>
+							<a href="contact.html" target="blank">
+								<span class="icon icon-facebook"></span>
+							</a>
+							<a href="contact.html" target="blank">
+								<span class="icon icon-instagram"></span>
+							</a>
+							<a href="contact.html" target="blank">
+								<span class="icon icon-c"></span>
+							</a>
+						</div>
+
+						<div class="footer-top-item flex-item">
+							<span class="icon icon-clock"></span>
+							<p>Пн-Пт: 8:30-20:00<br>Сб-Вс: 10:00-17:00</p>
+						</div>
+
+						<div class="footer-top-item flex-item">
+							<a href="tel:+37529xxxxxxx">
+								<span class="icon icon-phone"></span>
+							</a>
+							<p>+375 (29) xx xx xxx<br>xxx@mail.ru</p>
+						</div>
+
+						<div class="footer-top-item flex-item">
+							<div class="border">
+								<a class="footer-btn" href="contact.html">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /footer-top -->
+
+				<!-- footer-bottom -->
+				<div class="footer-bottom">
+					<div class="flex">
+
+						<div class="footer-bottom-item">
+							<h4>О нас</h4>
+							<p>Мы профессионалы своего дела и ценим свою репутацию. Именно поэтому качество наших услуг всегда остается на высоком уровне.
+							Мы предоставляем все виды услуг по ландшафтному дизайну на всей территории Республики Беларусь</p>
+						</div>
+
+						<div class="footer-bottom-item">
+							<h4>Наши услуги</h4>
+							<ul>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Проектирование ландшафтного дизайна</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Благоустройство земельных территорий</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Озеленение участка дома под ключ</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Обустройство газона</a></li>
+								<li><a href="#"><span class="icon icon-keyboard_arrow_right"></span>Посадка декоративных растений</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Монтаж и установка систем автоматического полива</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Укладка тротуарной плитки под ключ</a></li>
+								<li><a href="service.html"><span class="icon icon-keyboard_arrow_right"></span>Установка заборовМонтаж уличного освещения</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-bottom-item">
+							<h4>Контакты</h4>
+							<ul class="contact">
+								<li><span class="icon icon-location"></span> УНП XXXXXXXXX<br>
+								г. Минск, уд.Семеняко 6</li>
+								<li><span class="icon icon-phone"></span> +375 (29) xx xx xxx</li>
+								<li><span class="icon icon-mail"></span> xxx@gmail.com</li>
+							</ul>
+						</div>
+
+						<div class="footer-bottom-item">
+							<h4>Где мы находимся</h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.136440379468!2d27.4473220157515!3d53.87600228009349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbda92c3136635%3A0xf54e6bbae216aaaa!2z0YPQuy4g0K7RgNC40Y8g0KHQtdC80LXQvdGP0LrQviA2LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1617837130729!5m2!1sru!2sby" width="270" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ footer-bottom -->
+		</footer>
+		<!-- /footer -->
+	</div>
+
+	<!-- scripts -->
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<!-- скрипт для вызова меню -->
+	<script src="scripts/index.js">
+	</script>
+</body>
+</html>

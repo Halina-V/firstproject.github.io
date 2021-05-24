@@ -1,0 +1,222 @@
+/*header grid-элемент с фоновой картинкой*/
+header{
+	grid-column: 1/5;
+	grid-row:1/2;
+	width: 100%;
+	height: 30vh;
+	background: url('../images/header-bg2.jpg') no-repeat;
+    background-size:cover;
+    background-position: center bottom;
+	background-attachment: fixed;/*фиксированый фон*/
+	color: #fff;
+	position: relative;
+	top:0;
+}
+	/*заголовок header*/
+	.header-caption{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+		width:100%;
+		text-align: center;
+		font-family: 'Merriweather', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px silver,
+		-1px 1px 1px silver;
+		font-size: 16px;
+	}
+		.header-caption a{
+			text-decoration: none;
+			color:#fff;
+			display:inline-block;
+			border-radius: 5px 5px;
+			padding: 0 5px;
+		}
+		.header-caption a:hover{
+			text-shadow: 1px 1px 1px #fff,
+			-1px 1px 1px #fff;
+
+		}
+				.header-caption h2 {
+		display: block;
+	}
+		.header-caption h3 {
+		display: none;
+	}
+
+/*main грид-элемент*/
+main{
+	grid-column: 1/5;
+	grid-row:2/3;
+	width: 100%;/*растягивает все блоки по всей ширине*/
+	box-sizing: border-box;
+}
+/*блок с контактами*/
+.contact-block{
+	background-color: #fff;
+	color:#4e4854;
+	width: 100%;
+	align-items: center;
+}
+	.contact-block-items{
+		padding: 50px 10px;
+		flex:1;
+	}
+		/*стиль карточек*/
+		.contact-block-item{
+			min-width:300px;
+			flex:1 1 100px;
+			text-align: center;
+		}
+		.contact-block .block-title p{
+				font-size:16px;
+				flex:1;
+			}
+		.contact-block-item span{
+			border:none;
+			background-color:#c5e3b1; 
+			font-size:36px;
+			animation: icon 2s infinite alternate;
+			float: left;
+			margin:5px;
+		}
+		.contact-block-item span{
+			/*центрируем иконку внутри*/
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			font-size: 40px;
+			border:solid 3px #4e4854;;
+			border-radius: 50%;
+			/*центрируем иконку в карточке*/
+			margin:0 auto; 
+		}
+		.contact-block .contact-block-item-text p{
+				font-weight: normal;
+				padding: 0;
+				text-align:center;
+				text-transform: initial;
+				font-style: normal;
+			}
+			.contact-block-item-text p a{
+				text-decoration: none;
+				color:#4e4854;
+				font-weight: bold;
+			}
+			.contact-block-item-text a:hover{
+		color: #697865;
+	}
+
+/*блок с формой*/
+.left-side{
+	flex:2;
+	margin: 0 0 30px 0;
+}
+	.left-side-text{
+		min-width:300px;
+		padding: 50px 10px ;
+		align-items: center;
+	}
+			.left-side-text p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+	.left-side form{
+		width: 100%;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 20px;
+	min-width: 300px;
+	}
+	.left-side form div{
+		box-sizing: border-box;
+		text-align: left;
+		font-size: 14px;
+		width: 100%;
+	}
+		.left-side input{
+				width:100%;
+				padding: 10px;
+				outline: none;
+				margin-top:-1px;
+				border:solid 1px #697865;
+				color: #697865;
+			}
+			.left-side input:hover{
+				color: #fff;
+				background-color: #697865; 
+			}
+			.left-side input::placeholder,
+			.left-side textarea::placeholder{
+				color: #697865;
+				
+			}
+			.left-side input:hover::placeholder,
+			.left-side textarea:hover::placeholder{
+				color: #fff;
+			}
+			.left-side textarea{
+				width: 100%;
+				height: 90px;
+				resize: vertical;
+				padding: 10px;
+				font-size: 14px;
+				outline: none;
+				margin-top:-1px;
+				border:solid 1px #697865;
+			}
+			.left-side textarea:hover{
+				color: #fff;
+				background-color: #697865; 
+			}
+			.left-side [type="submit"]{
+				margin: 0;
+				margin-top:-5px;
+				color: #697865;
+				cursor: pointer;
+				text-align: center;
+				background-color: #fff;
+			}
+	.left-side [type="submit"]:hover{
+		color: #fff;
+				background-color: #697865; 
+			}
+
+
+.arrow-totop{
+	grid-row: 2/4;
+}
+
+footer{
+	grid-column: 1/5;
+	grid-row:3/4;
+	width: 100%;/*растягивает все блоки по всей ширине*/
+	box-sizing: border-box;
+	background-image: url(../images/footer.jpg);
+	background-size: cover;
+	background-attachment: fixed;/*фиксированый фон*/
+	color: #fff;
+}
+
+@media (max-width: 600px){
+
+	/*уменьшение размера шрифта в заголовке*/
+	.header-caption h2 {
+		display: none;
+	}
+		.header-caption h3 {
+			display: block;
+		}
+}
+
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.left-side-text p{
+		max-width: 100%;
+	}
+	}

@@ -1,0 +1,130 @@
+
+/*header grid-элемент с фоновой картинкой*/
+header{
+	grid-column: 1/5;
+	grid-row:1/2;
+	width: 100%;
+	height: 30vh;
+	background: url('../images/header-bg2.jpg') no-repeat;
+	background-size:cover;
+	background-position: center bottom;
+	background-attachment: fixed;/*фиксированый фон*/
+	color: #fff;
+	position: relative;
+	top:0;
+}
+	/*заголовок header*/
+	.header-caption{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+		width:100%;
+		text-align: center;
+		font-family: 'Merriweather', serif;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px silver,
+		-1px 1px 1px silver;
+		font-size: 16px;
+	}
+	.header-caption a{
+		text-decoration: none;
+		color:#fff;
+		display:inline-block;
+		border-radius: 5px 5px;
+		padding: 0 5px;
+	}
+	.header-caption a:hover{
+		text-shadow: 1px 1px 1px #fff,
+		-1px 1px 1px #fff;
+	}
+		.header-caption h2 {
+		display: block;
+	}
+		.header-caption h3 {
+		display: none;
+	}
+
+/*main грид-элемент*/
+main{
+	grid-column: 1/5;
+	grid-row:2/3;
+	width: 100%;/*растягивает все блоки по всей ширине*/
+	box-sizing: border-box;
+	color: #4e4854;
+}
+
+.gallery-block{
+	flex:1;
+	margin:40px 0;
+	padding: 10px;
+	min-width: 300px;
+}
+.gallery-block-title {
+	margin-bottom: 47px;
+	position: relative;
+	width: 100%;
+}
+	.gallery-block-title .gallery-block-subtitle {
+		padding-right: 10px;
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 0;
+		text-transform: uppercase;
+	}
+	.gallery-block-title .gallery-block-subtitle:after {
+		background: #c5e3b1 none repeat scroll 0 0;
+		content: "";
+		display: inline-block;
+		height: 2px;
+		width: 50px;
+	}
+
+	.gallery-block p{
+		line-height: 20px;
+	}
+
+/*блок с fotorama*/
+.container{
+	margin:0 auto 30px;
+	text-align: center;
+}
+.container .fotorama img{
+	width:150px;
+	height: 100px;
+}
+.gallery{
+	padding:20px 10px; 
+}
+.fotorama__wrap{
+	margin:0 auto;
+}
+
+
+	.arrow-totop{
+		grid-column: 1/5;
+		grid-row: 2/3;
+		width: 50px;
+		height: 50px;
+		z-index: 10;
+		position: sticky;
+		top: 85vh;
+		left:95%;
+	}
+
+@media (max-width: 600px){
+	/*уменьшение размера шрифта в заголовке*/
+	.header-caption h2 {
+		display: none;
+	}
+		.header-caption h3 {
+			display: block;
+		}
+	}
+
+
+
+
+
+
+
